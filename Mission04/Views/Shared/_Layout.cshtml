@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <!-- Custom Title -->
+    <title>@ViewData["Title"]</title>
+    <link rel="icon" href="img/pngegg.png" />
+
+    <!-- Bootstrap -->
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- My Custom Styles -->
+    <link href="~/css/main.css" rel="stylesheet" />
+    
+</head>
+<body>
+    <nav>
+        <a asp-controller="Blah" asp-action="Index">Home</a>
+        <a asp-controller="Blah" asp-action="Calculator">Calculator</a>
+    </nav>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <footer>
+        Footer!
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Jquery -->
+    <script src="lib/jquery/jquery-3.6.3.min.js"></script>
+
+    <!-- my jquery -->
+    <script src="~/js/gradeCalculator.js"></script>
+
+</body>
+</html>

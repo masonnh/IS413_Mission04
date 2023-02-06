@@ -51,6 +51,8 @@ $("#btnCalculate").click(function () {
         letterGrade = "A"
     }
 
-    // print the letter grade to the page 
+    alert(letterGrade);
+
+    // print the letter grade to the page
     $("#letterGrade").text("Your Grade: " + letterGrade);
 });
